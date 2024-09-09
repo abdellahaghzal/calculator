@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Digital-7';
+    src: url('../fonts/digital-7/digital-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	width: 100%;
+	background-color: rgb(32, 32, 32);
+}
+
+#calculator {
+	/* border: solid black 2px; */
+	border-radius: 30px;
+	padding: 30px;
+	box-sizing: border-box;
+	height: 600px;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(85, 85, 85);
+}
+
+#display {
+	box-sizing: border-box;
+	width: 435px;
+	height: 120px;
+	border: solid black 2px;
+	display: flex;
+	margin-bottom: 30px;
+	border-radius: 13px;
+	padding: 20px;
+	text-align: right;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	background-color: #008000;
+	font-family: 'Digital-7', sans-serif;
+	font-size: 3rem;
+}
+
+#display > div {
+	overflow: hidden;
+	font-size: 50px;
+	flex-grow: 1;
+	font-family: 'Digital-7', monospace;
+}
+
+#buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 1;
+	width: 100%;
+}
+
+#nums {
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	width: 257px;
+	height: 348px;
+	flex-shrink: 0;
+	flex-wrap: wrap;
+}
+
+#num0 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#operations {
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	width: 165px;
+	height: 348px;
+	flex-shrink: 0;
+	flex-wrap: wrap;
+	font-weight: 1000;
+}
+
+button {
+	height: 75px;
+	width: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	font-size: 2rem;
+	cursor: pointer;
+	background-color: gray;
+	border: black 2px solid;
+}
+
+#backspace {
+	font-size: 1.5rem;
+}
+
+#footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	z-index: 1000;
+	color: white;
+}
